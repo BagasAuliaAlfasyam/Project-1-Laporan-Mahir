@@ -57,6 +57,38 @@ Berdasarkan *problem statements*, berikut adalah tujuan yang ingin dicapai dalam
 
 Dataset yang digunakan untuk memprediksi jenis gangguan tidur (*sleep disorder*) diambil dari platform [Kaggle](https://www.kaggle.com/) dan dipublikasikan dengan nama *Sleep Health and Lifestyle Dataset* dan *Sleep Health and Lifestyle Dataset Part 2*. Salah satu dataset ini memiliki *usability score* tinggi dan disusun berdasarkan data survei yang mencakup informasi tentang kebiasaan tidur, kesehatan, dan pekerjaan responden. Dataset ini terdiri dari satu file dalam format CSV.
 
+Pada project yg dibuat ini 2 dataset diambil dari situs repository terbuka kaggle [Tautan](https://www.kaggle.com/datasets/dbdmobile/myanimelist-dataset/data?select=anime-filtered.csv) dengan keterangan seperti table di bawah ini.
+
+### **Dataset Part 1**
+
+| Jenis    | Keterangan                                                |
+|----------|-----------------------------------------------------------|
+| Judul    | Sleep Health and Lifestyle Dataset |
+| Sumber   |[Sleep Health and Lifestyle Dataset](https://www.kaggle.com/datasets/uom190346a/sleep-health-and-lifestyle-dataset) |
+| Pemelihara | [Laksika Tharmalingam](https://www.kaggle.com/uom190346a) |
+| Lisensi  | Database: Open Database, Contents: Database Contents |
+| Visibilitas | Publik |
+| Tag     | Computer Science, Education, Health, Data Visualization, Diseases |
+| Jumlah Baris     | 374 |
+| Jumlah Kolom     | 13 |
+| Kolom dengan data kosong | `Sleep Disorder` : **219** |
+| Rating Penggunaan | 10.00 |
+
+### **Dataset Part 2**
+
+| Jenis    | Keterangan                                                |
+|----------|-----------------------------------------------------------|
+| Judul    | Sleep Health and Lifestyle Dataset|
+| Sumber   |[Sleep Health and Lifestyle Dataset](https://www.kaggle.com/datasets/caymansmith/sleep-health-and-lifestyle-data-set-part-2)|
+| Pemelihara | [Laksika Tharmalingam](https://www.kaggle.com/caymansmith)|
+| Lisensi  | Database: Open Database, Contents: Database Contents|
+| Visibilitas | Publik|
+| Tag     | - |
+| Jumlah Baris| 186 |
+| Jumlah Kolom| 13 |
+| Kolom dengan data kosong | `Sleep Disorder` : **156** |
+| Rating Penggunaan | 4.12 |
+
 **Catatan penting dari pembuat dataset:**
 *"I would like to clarify that the data I am presenting is synthetic and created by me for illustrative purposes."*
 
@@ -84,7 +116,7 @@ Dataset ini memiliki 12 variabel dengan keterangan sebagai berikut.
 
 ### Data Cleaning
 
-Setelah diperiksa apakah terdapat kolom yang bernilai null dan hasilnya di temukan 1 kolom yang bernilai null. Sementara itu, setelah diperiksa apakah terdapat data duplikat dan ternyata tidak ada, selanjutnya cross check manual data yang berbentuk object yang sekiranya itu bisa di satuin maka di satuin dari `'Overweight' 'Normal' 'Obese' 'Normal Weight'` menjadi `'Overweight' 'Normal' 'Obese'`, selanjutnya memisahkan kolom `Blood Pressure` menjadi 2 yaitu Systolic dan Diastolic. Oleh karena itu, setelah dilakukan pembersihan data, diperoleh deskripsi statistik data numerik sebagai berikut.
+Setelah diperiksa apakah terdapat kolom yang bernilai null dan hasilnya di temukan 1 kolom yang bernilai null yaitu `Sleep Disorder`. Sementara itu, setelah diperiksa apakah terdapat data duplikat dan ternyata tidak ada, selanjutnya cross check manual data yang berbentuk object yang sekiranya itu bisa di satuin maka di satuin dari `'Overweight' 'Normal' 'Obese' 'Normal Weight'` menjadi `'Overweight' 'Normal' 'Obese'`, selanjutnya memisahkan kolom `Blood Pressure` menjadi 2 yaitu Systolic dan Diastolic. Oleh karena itu, setelah dilakukan pembersihan data, diperoleh deskripsi statistik data numerik sebagai berikut.
 
 <!-- markdownlint-disable MD033 -->
 <div style="overflow-x: auto;">
@@ -382,6 +414,109 @@ Secara keseluruhan, heatmap ini mengungkapkan pola hubungan yang menarik antara 
 
 ## Data Preparation
 
+### Menggabungkan dataset 1 dan dataset 2
+
+Setiap dataset di inisialisasi dan akan di gabungkan, berikut implementasinya :
+
+```python
+data1 = pd.read_csv("/content/Sleep_health_and_lifestyle_dataset.csv")
+data2 = pd.read_csv("/content/Sleep_health_and_lifestyle_dataset_part_2.csv")
+
+# Potong baris pertama dari data2
+data2_cleaned = data2.iloc[1:]
+
+# Gabungkan dataset
+data = pd.concat([data1, data2_cleaned], ignore_index=True)
+
+```
+
+### Pemeriksaan Nilai Kosong pada Data
+
+Dataset diperiksa untuk nilai kosong. Hasil analisis menunjukkan bahwa kolom `Sleep Disorder` memiliki nilai kosong, sehingga langkah berikut dilakukan:
+
+```python
+pd.DataFrame({'Nilai yang Kosong pada dataset': data.isnull().sum()})
+data['Sleep Disorder'] = data['Sleep Disorder'].fillna('No Disorder')
+data['Sleep Disorder'].isnull().sum()
+```
+
+### Analisis Data Duplikat
+
+Data diperiksa untuk mendeteksi adanya duplikasi:
+
+```python
+# Cek duplikasi secara keseluruhan
+duplicates = data[data.duplicated()]
+print("Data duplikat:")
+duplicates
+
+# Cek duplikasi berdasarkan 'Person ID'
+duplicates_person_id = data[data.duplicated(subset=['Person ID'])]
+print("\nData duplikat berdasarkan Person ID :")
+duplicates_person_id
+
+# Total jumlah duplikasi
+num_duplicates = len(duplicates)
+print(f"\nTotal data duplikat per baris: {num_duplicates}")
+```
+
+### Preprocessing Kolom Tekanan Darah
+
+Kolom Blood Pressure dipecah menjadi dua kolom: Systolic dan Diastolic. Berikut langkahnya:
+
+```python
+data = pd.concat([data, data['Blood Pressure'].str.split('/', expand=True)], axis=1).drop('Blood Pressure', axis=1)
+data = data.rename(columns={0: 'Systolic', 1: 'Diastolic'})
+
+data['Systolic'] = data['Systolic'].astype(float)
+data['Diastolic'] = data['Diastolic'].astype(float)
+```
+
+### Menghapus Kolom `Person ID`
+
+Kolom Person ID dihapus karena tidak relevan untuk analisis:
+
+```python
+data.drop(columns=["Person ID"], inplace=True)
+```
+
+### Normalisasi Kategori BMI
+
+Kategori pada kolom `BMI Category` diperiksa untuk konsistensi. Ditemukan kategori `Normal` yang diubah menjadi `Normal Weight`:
+
+```python
+BMI_unique = data['BMI Category'].unique()
+print(BMI_unique)
+
+data['BMI Category'] = data['BMI Category'].replace({'Normal': 'Normal Weight'})
+data['BMI Category'].value_counts()
+```
+
+### Merubah Label encoding
+
+Kolom target Sleep Disorder yang sebelumnya berbentuk kategori diubah menjadi bentuk numerik menggunakan LabelEncoder. Hal ini dilakukan agar model dapat memahami data secara numerik. Berikut adalah implementasinya:
+
+```python
+label_encoder = LabelEncoder()
+data['Sleep Disorder'] = label_encoder.fit_transform(data['Sleep Disorder'])
+```
+
+### Menggunakan Transformer Preprocessing
+
+Preprocessing adalah tahap krusial dalam machine learning untuk mengubah data mentah menjadi format yang siap dianalisis. Tujuannya adalah:
+
+1. Normalisasi data numerik
+2. Konversi data kategorik
+3. Mengurangi bias
+4. Meningkatkan performa model
+
+Teknik utama:
+
+- Untuk fitur numerik: `RobustScaler` (menangani pencilan)
+- Untuk fitur kategorik: `OneHotEncoder` (mengubah kategori jadi variabel numerik)
+
+Metode ColumnTransformer memungkinkan penerapan transformasi berbeda dalam satu langkah, membuat preprocessing lebih efisien dan terstruktur.
+
 ### Preprocessing Fitur Numerik
 
 Fitur numerik pada dataset akan dinormalisasi menggunakan **RobustScaler** untuk menangani pencilan. Fitur numerik yang akan diproses meliputi:
@@ -429,6 +564,13 @@ Setelah proses di atas, semua fitur pada dataset akan berbentuk numerik dan ters
 ### Menangani Data yang Tidak Seimbang
 
 Selanjutnya akan menggunakan metode SMOTE untuk Menangani data yang tidak seimbang, Berikut distribusi diagram batang dan tabel untuk menangani data yang tidak seimbang.
+
+Berikut implementasinya:
+
+```python
+smote = SMOTE(random_state=42)
+X_resampled, y_resampled = smote.fit_resample(x_praprocessing, y)
+```
 
 #### Data Sebelum di tangani
 
@@ -492,14 +634,11 @@ Random Forest membentuk decision trees dengan menggunakan sampling dengan pengga
 
 ```python
 RandomForestClassifier(
-    n_estimators=200, 
-    criterion="entropy", 
-    max_depth=10, 
     random_state=50
 )
 ```
 
-Parameter yang digunakan mencakup `n_estimators=200` untuk jumlah pohon, `criterion="entropy"` untuk fungsi kualitas splitting, `max_depth=10` untuk kedalaman maksimum pohon, dan `random_state=50` untuk mengontrol seed acak.
+Parameter yang digunakan mencakup`random_state=50` untuk mengontrol seed acak.
 
 ### 4. ***K-Nearest Neighbors* (KNN)**
 

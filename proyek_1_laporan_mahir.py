@@ -54,7 +54,15 @@ print(f" Total Dataset {len(data)}")
 
 data.head()
 
-"""# Deskripsi Variabel
+data1.info()
+
+"""Berdasarkan info di atas kolom `Sleep Disorder` yang tidak kosong ialah 155 dan yang kosong 219"""
+
+data2.info()
+
+"""Berdasarkan info di atas kolom `Sleep Disorder` yang tidak kosong ialah 30 dan yang kosong 156
+
+# Deskripsi Variabel
 ## Arti Variabel
 Berikut adalah arti dari variabel-variabel pada dataset tersebut.
 
