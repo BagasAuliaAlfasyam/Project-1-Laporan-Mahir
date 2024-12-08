@@ -5,13 +5,15 @@
 <div style="text-align: justify;">
 <!-- markdownlint-enable MD033 -->
 
-Gangguan tidur mencakup berbagai kondisi yang dapat mengganggu pola tidur normal seseorang. Kondisi ini termasuk salah satu masalah klinis yang paling sering ditemui di berbagai kalangan, baik anak-anak, remaja, maupun orang dewasa. Ketika seseorang mengalami tidur yang tidak memadai atau tidur yang tidak memberikan efek pemulihan (non-restoratif), berbagai fungsi penting dalam kehidupan sehari-hari, seperti fungsi fisik, mental, sosial, dan emosional, dapat terganggu.
+Tidur adalah aktivitas biologis yang dimulai dan dikendalikan oleh otak manusia. Tidur menjaga kesehatan fisik dan mental seseorang. Tubuh manusia menyembuhkan dan membangun kembali dirinya sendiri selama tidur, menghilangkan limbah metabolisme yang menumpuk selama terjaga. Tidur juga mengatur ulang memori dan mendukung pembentukan memori jangka panjang. Mempertimbangkan manfaat tidur yang luar biasa bagi manusia, penting bagi setiap orang untuk tidur yang cukup. Tidur yang tidak cukup atau berkualitas buruk mengganggu ritme sirkadian tubuh, meningkatkan risiko terkena masalah kesehatan, termasuk penyakit serius seperti penyakit kardiovaskular, gangguan kognitif, dan penurunan memori. Hal ini berdampak negatif pada aktivitas sehari-hari, seperti belajar atau bekerja, dan dapat menyebabkan penurunan nafsu makan, produktivitas kerja yang berkurang, dan peningkatan probabilitas kecelakaan. Kurang tidur juga mengganggu ritme sirkadian tubuh, perubahan aktivitas hidup dalam waktu 24 jam, meningkatkan risiko mengembangkan masalah kesehatan, termasuk penyakit serius seperti penyakit kardiovaskular, gangguan kognitif, dan penurunan memori [(Xu et al., 2022)](https://www.sciencedirect.com/science/article/abs/pii/S0010482522008083).
 
-Efek dari gangguan tidur ini tidak hanya berdampak pada kesehatan tubuh, tetapi juga memengaruhi tingkat keselamatan seseorang, terutama jika gangguan tersebut menyebabkan rasa kantuk yang berlebihan saat menjalani aktivitas harian, seperti berkendara atau bekerja. Selain itu, kualitas hidup secara keseluruhan dapat menurun secara signifikan, karena tidur yang berkualitas merupakan salah satu pilar utama kesehatan yang optimal.
+Menurut National [(Library of Medicine (2023)](https://www.ncbi.nlm.nih.gov/books/NBK560720/#article-29137.r1), Gangguan tidur adalah sekelompok kondisi yang mengganggu pola tidur normal. Gangguan tidur merupakan salah satu masalah klinis yang paling umum ditemui. Tidur yang tidak memadai atau tidak memulihkan dapat mengganggu fungsi fisik, mental, sosial, dan emosional yang normal. Gangguan tidur dapat memengaruhi kesehatan, keselamatan, dan kualitas hidup secara keseluruhan. Sebuah penelitian menunjukkan adanya penurunan kualitas hidup yang signifikan pada pasien insomnia.
 
-Penelitian menunjukkan bahwa pasien dengan gangguan tidur, khususnya insomnia, mengalami penurunan kualitas hidup yang signifikan dibandingkan mereka yang memiliki pola tidur normal. Insomnia dapat menyebabkan berbagai masalah tambahan, seperti kesulitan berkonsentrasi, meningkatnya risiko gangguan kesehatan mental seperti depresi dan kecemasan, serta gangguan dalam hubungan sosial. Dengan demikian, penting untuk mengenali dan menangani gangguan tidur agar dampaknya terhadap kesehatan dan kualitas hidup dapat diminimalkan.
+Insomnia ditandai dengan kesulitan yang sering dilaporkan sendiri untuk memulai tidur, mempertahankan tidur, dan/atau bangun pagi yang tidak diinginkan dari tidur, dengan gangguan siang hari yang terkait seperti kelelahan, kesulitan konsentrasi dan suasana hati yang buruk. Gangguan insomnia kronis didefinisikan sebagai adanya gejala malam dan siang hari yang sering berlangsung setidaknya selama 3 bulan [(Sweetman et al., 2021)](https://www.sciencedirect.com/science/article/abs/pii/S1087079221001040).
 
-Saat ini, teknologi telah mengalami perkembangan pesat, termasuk dalam bidang *machine learning*. Teknologi ini telah diaplikasikan secara luas dalam berbagai sektor, termasuk kesehatan. Salah satu penerapan yang menarik adalah penggunaan *machine learning* untuk mendeteksi gangguan tidur (*sleep disorder*). Dengan kemampuan untuk menganalisis data secara mendalam berdasarkan berbagai parameter, *machine learning* memungkinkan identifikasi dini gangguan tidur, sehingga langkah pencegahan dan penanganan dapat dilakukan dengan lebih efektif.
+Sleep apnea adalah masalah kesehatan utama yang terkait dengan berbagai bentuk penyakit kardiovaskular termasuk hipertensi, penyakit arteri koroner, dan stroke. Tes standar untuk diagnosis sleep apnea adalah polisomnografi (PSG) di mana pasien perlu tidur semalaman di laboratorium tidur. Namun, baru-baru ini pengujian tidur di rumah semakin banyak digunakan untuk mendiagnosis OSA. Jenis perangkat pengujian tidur di rumah yang paling umum digunakan merekam aliran udara, upaya pernapasan, saturasi oksigen, dan detak jantung [(Benetó et al., 2009)](https://www.sciencedirect.com/science/article/abs/pii/S1087079208001081).
+
+Penelitian menunjukkan bahwa pasien dengan gangguan tidur, khususnya insomnia dan sleep apnea, mengalami penurunan kualitas hidup yang signifikan dibandingkan mereka yang memiliki pola tidur normal. Saat ini, teknologi telah mengalami perkembangan pesat, termasuk dalam bidang *machine learning*. Teknologi ini telah diaplikasikan secara luas dalam berbagai sektor, termasuk kesehatan. Salah satu penerapan yang menarik adalah penggunaan *machine learning* untuk mendeteksi gangguan tidur (*sleep disorder*). Dengan kemampuan untuk menganalisis data secara mendalam berdasarkan berbagai parameter, *machine learning* memungkinkan identifikasi dini gangguan tidur, sehingga langkah pencegahan dan penanganan dapat dilakukan dengan lebih efektif.
 
 Pada proyek ini, penulis fokus memanfaatkan teknologi *machine learning* untuk mendeteksi *sleep disorder*. Untuk mencapai hasil yang optimal, penulis akan menggunakan enam metode *machine learning*:
 
@@ -49,9 +51,13 @@ Berdasarkan *problem statements*, berikut adalah tujuan yang ingin dicapai dalam
 
 ### Solution Statement
 
-   1. Melakukan proses *Exploratory Data Analysis* (EDA) untuk mengetahui total persentase responden dalam setiap kategori gangguan tidur (normal, insomnia, *sleep apnea*), menganalisis perbedaan prevalensi gangguan tidur berdasarkan jenis kelamin dan variable lainnya, menentukan faktor-faktor yang memengaruhi gangguan tidur, dan mengidentifikasi pola atau faktor spesifik yang konsisten dalam setiap kategori gangguan tidur.
-   2. Menggunakan 7 model *machine learning* untuk memprediksi jenis gangguan tidur pada responden, yaitu Logistic Regression, Decision Tree, Random Forest, Gradient Boosting, Support Vector Machine (SVM), XGBoost, dan K-Nearest Neighbors (KNN).
-   3. Mengevaluasi performa setiap model menggunakan metrik seperti *confusion matrix* dan *F1-score* untuk menentukan model terbaik dengan akurasi tertinggi.
+   Untuk mencapai tujuan-tujuan tersebut, berikut langkah-langkah strategis yang akan dilakukan:
+
+   1. Eksplorasi Data (Exploratory Data Analysis - EDA) Pada tahap awal ini dilakukan untuk menjawab pertanyaan mengenai distribusi responden dalam setiap kategori gangguan tidur. EDA akan mengidentifikasi persentase responden berdasarkan kategori, menganalisis prevalensi gangguan tidur berdasarkan jenis kelamin, serta menentukan faktor-faktor utama yang memengaruhi gangguan tidur. EDA juga bertujuan untuk menemukan pola atau faktor spesifik yang relevan di setiap kategori gangguan tidur.
+
+   2. Penerapan Model Machine Learning Untuk memprediksi jenis gangguan tidur, tujuh algoritma machine learning akan digunakan: Logistic Regression, Decision Tree, Random Forest, Gradient Boosting, Support Vector Machine (SVM), XGBoost, dan K-Nearest Neighbors (KNN). Setiap model akan dilatih menggunakan data responden untuk menghasilkan prediksi yang akurat.
+
+   3. Setelah model selesai dilatih, evaluasi dilakukan untuk menentukan performa masing-masing model. Metrik evaluasi yang digunakan meliputi confusion matrix dan F1-score. Evaluasi ini bertujuan untuk memilih model dengan akurasi terbaik yang dapat digunakan secara andal dalam memprediksi gangguan tidur.
 
 ## Data Understanding
 
@@ -427,8 +433,9 @@ data2_cleaned = data2.iloc[1:]
 
 # Gabungkan dataset
 data = pd.concat([data1, data2_cleaned], ignore_index=True)
-
 ```
+
+Dataset 1 dan dataset 2 digabungkan menggunakan `pd.concat()` setelah baris pertama dari dataset 2 dihapus menggunakan `iloc[1:]`. Penggabungan ini dilakukan untuk memastikan semua data dapat digunakan secara komprehensif dalam analisis dan pelatihan model. Menghapus baris pertama pada dataset 2 diperlukan jika baris tersebut mengandung informasi metadata atau header duplikat yang tidak relevan.
 
 ### Pemeriksaan Nilai Kosong pada Data
 
@@ -439,6 +446,8 @@ pd.DataFrame({'Nilai yang Kosong pada dataset': data.isnull().sum()})
 data['Sleep Disorder'] = data['Sleep Disorder'].fillna('No Disorder')
 data['Sleep Disorder'].isnull().sum()
 ```
+
+Nilai kosong dalam dataset diperiksa menggunakan `isnull().sum()`. Pada kolom `Sleep Disorder`, nilai kosong diisi dengan label 'No Disorder' menggunakan `fillna()`. Mengisi nilai kosong dengan kategori tertentu bertujuan untuk mencegah kehilangan data dan menjaga konsistensi dalam analisis. Pendekatan ini memungkinkan model memahami bahwa tidak ada gangguan tidur jika data kosong.
 
 ### Analisis Data Duplikat
 
@@ -460,6 +469,8 @@ num_duplicates = len(duplicates)
 print(f"\nTotal data duplikat per baris: {num_duplicates}")
 ```
 
+Pemeriksaan duplikasi dilakukan secara keseluruhan dan berdasarkan kolom tertentu (`Person ID`) menggunakan fungsi `duplicated()`. Mendeteksi dan menangani duplikasi penting untuk memastikan dataset tidak memiliki informasi redundan, yang dapat memengaruhi akurasi analisis atau model.
+
 ### Preprocessing Kolom Tekanan Darah
 
 Kolom Blood Pressure dipecah menjadi dua kolom: Systolic dan Diastolic. Berikut langkahnya:
@@ -472,13 +483,7 @@ data['Systolic'] = data['Systolic'].astype(float)
 data['Diastolic'] = data['Diastolic'].astype(float)
 ```
 
-### Menghapus Kolom `Person ID`
-
-Kolom Person ID dihapus karena tidak relevan untuk analisis:
-
-```python
-data.drop(columns=["Person ID"], inplace=True)
-```
+Kolom `Blood Pressure` dipecah menjadi dua kolom terpisah: `Systolic` dan `Diastolic` menggunakan `str.split()`. Memisahkan data tekanan darah menjadi dua kolom memungkinkan analisis yang lebih mendalam dan memberikan fleksibilitas dalam pengolahan model, karena kedua nilai ini memiliki signifikansi klinis yang berbeda.
 
 ### Normalisasi Kategori BMI
 
@@ -492,6 +497,18 @@ data['BMI Category'] = data['BMI Category'].replace({'Normal': 'Normal Weight'})
 data['BMI Category'].value_counts()
 ```
 
+Kategori `Normal` pada kolom `BMI Category` diganti menjadi `Normal Weight` menggunakan `replace()`. Normalisasi kategori membantu menciptakan konsistensi label, yang mempermudah interpretasi data dan mengurangi kesalahan dalam pengkodean atau analisis.
+
+### Menghapus Kolom `Person ID`
+
+Kolom Person ID dihapus karena tidak relevan untuk analisis:
+
+```python
+data.drop(columns=["Person ID"], inplace=True)
+```
+
+Kolom `Person ID` dihapus dari dataset menggunakan `drop()`. Kolom ini tidak relevan untuk analisis atau pelatihan model karena merupakan pengenal unik dan tidak memberikan informasi yang berguna untuk analisis gangguan tidur.
+
 ### Merubah Label encoding
 
 Kolom target Sleep Disorder yang sebelumnya berbentuk kategori diubah menjadi bentuk numerik menggunakan LabelEncoder. Hal ini dilakukan agar model dapat memahami data secara numerik. Berikut adalah implementasinya:
@@ -500,6 +517,8 @@ Kolom target Sleep Disorder yang sebelumnya berbentuk kategori diubah menjadi be
 label_encoder = LabelEncoder()
 data['Sleep Disorder'] = label_encoder.fit_transform(data['Sleep Disorder'])
 ```
+
+Kolom `Sleep Disorder` diubah menjadi nilai numerik menggunakan `LabelEncoder` dari `sklearn`. Sebagian besar algoritma *machine learning* hanya menerima data numerik, sehingga diperlukan pengkodean untuk mengubah data kategori menjadi format yang dapat dipahami oleh model.
 
 ### Menggunakan Transformer Preprocessing
 
@@ -542,24 +561,19 @@ Fitur kategorikal pada dataset akan dikonversi menjadi nilai numerik menggunakan
 
 Proses **OneHotEncoding** akan membuat kolom baru untuk setiap kategori dalam fitur tersebut, dengan nilai 1 jika kategori tersebut sesuai, dan 0 jika tidak. Setelah encoding selesai, kolom asli akan dihapus.
 
-### Transformasi Data
+Berikut implementasi nya :
 
-Setelah proses di atas, semua fitur pada dataset akan berbentuk numerik dan terstandarisasi seperti table di bawah :
-<!-- markdownlint-disable MD033 -->
-<div style="overflow-x: auto;">
-<!-- markdownlint-enable MD033 -->
+```python
+preprocessor = ColumnTransformer(
+    transformers=[
+        ('numeric_scaler', RobustScaler(), kolom_numerikal),
+        ('category_encoder', OneHotEncoder(drop='first',sparse_output =False, handle_unknown='ignore'), kolom_kategorikal)
+    ])
+```
 
-| Index | 0       | 1        | 2       | 3        | 4   | 5   | 6   | 7       | 8   | 9   | ... | 34  | 35 | 36  | 37  | 38  | 39  | 40  | 41  | 42  | 43  |
-|-------|---------|----------|---------|----------|-----|-----|-----|---------|-----|-----|-----|-----|----|-----|-----|-----|-----|-----|-----|-----|-----|
-| 1112  | 1.0909  | -1.0000  | 1.2500  | 1.2000   | 1.2 | 2.2 | 0.0 | 0.00000 | 0.0 | 0.0 | ... | 0.0 | 0  | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 1.0 | 0.0 | 1.0 |
-| 895   | 1.7273  | 0.8333   | -0.5000 | 0.0000   | 1.2 | 2.2 | 0.0 | 0.00000 | 0.0 | 0.0 | ... | 0.0 | 0  | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 1.0 |
-| 645   | 0.5455  | -0.5210  | -1.2500 | -0.4000  | 0.7 | 1.2 | 0.0 | 0.00000 | 0.0 | 0.0 | ... | 0.0 | 0  | 0.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 1.0 |
-| 543   | 0.3636  | -0.5833  | 0.5000  | -0.4000  | 0.2 | 0.2 | 0.0 | 0.00000 | 0.0 | 0.0 | ... | 0.0 | 0  | 0.0 | 0.0 | 0.0 | 0.0 | 1.0 | 0.0 | 0.0 | 1.0 |
-| 670   | 0.9475  | -0.4255  | 1.1708  | -0.5789  | 0.2 | 0.2 | 0.0 | 0.44718 | 0.0 | 0.0 | ... | 0.0 | 0  | 0.0 | 0.0 | 0.0 | 0.0 | 1.0 | 0.0 | 0.0 | 1.0 |
+**RobustScaler:** Digunakan untuk menangani pencilan pada fitur numerik agar tidak memengaruhi distribusi data secara signifikan.
 
-</div>
-
-----------------------------------------------------------------
+**OneHotEncoder:** Mengubah data kategori menjadi variabel numerik untuk memungkinkan model memahami hubungan antar kategori tanpa memaksakan urutan.
 
 ### Menangani Data yang Tidak Seimbang
 
@@ -571,6 +585,8 @@ Berikut implementasinya:
 smote = SMOTE(random_state=42)
 X_resampled, y_resampled = smote.fit_resample(x_praprocessing, y)
 ```
+
+Metode SMOTE (Synthetic Minority Over-sampling Technique) digunakan untuk menyeimbangkan data dengan menambahkan sampel sintetis pada kategori minoritas. Data yang tidak seimbang dapat menyebabkan bias pada model terhadap kelas mayoritas. SMOTE membantu menciptakan distribusi data yang seimbang, sehingga meningkatkan performa model dalam memprediksi kelas minoritas.
 
 #### Data Sebelum di tangani
 
@@ -591,6 +607,25 @@ X_resampled, y_resampled = smote.fit_resample(x_praprocessing, y)
 <!-- markdownlint-disable MD033 -->
 <img src = "Gambar/gambar21.png" alt="Distribusi Kepadatan Systolic berdasarkan Gangguan Tidur"/>
 <!-- markdownlint-enable MD033 -->
+
+### Hasil Transformasi Data
+
+Setelah proses di atas, semua fitur pada dataset akan berbentuk numerik dan terstandarisasi seperti table di bawah :
+<!-- markdownlint-disable MD033 -->
+<div style="overflow-x: auto;">
+<!-- markdownlint-enable MD033 -->
+
+| Index | 0       | 1        | 2       | 3        | 4   | 5   | 6   | 7       | 8   | 9   | ... | 34  | 35 | 36  | 37  | 38  | 39  | 40  | 41  | 42  | 43  |
+|-------|---------|----------|---------|----------|-----|-----|-----|---------|-----|-----|-----|-----|----|-----|-----|-----|-----|-----|-----|-----|-----|
+| 1112  | 1.0909  | -1.0000  | 1.2500  | 1.2000   | 1.2 | 2.2 | 0.0 | 0.00000 | 0.0 | 0.0 | ... | 0.0 | 0  | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 1.0 | 0.0 | 1.0 |
+| 895   | 1.7273  | 0.8333   | -0.5000 | 0.0000   | 1.2 | 2.2 | 0.0 | 0.00000 | 0.0 | 0.0 | ... | 0.0 | 0  | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 1.0 |
+| 645   | 0.5455  | -0.5210  | -1.2500 | -0.4000  | 0.7 | 1.2 | 0.0 | 0.00000 | 0.0 | 0.0 | ... | 0.0 | 0  | 0.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 1.0 |
+| 543   | 0.3636  | -0.5833  | 0.5000  | -0.4000  | 0.2 | 0.2 | 0.0 | 0.00000 | 0.0 | 0.0 | ... | 0.0 | 0  | 0.0 | 0.0 | 0.0 | 0.0 | 1.0 | 0.0 | 0.0 | 1.0 |
+| 670   | 0.9475  | -0.4255  | 1.1708  | -0.5789  | 0.2 | 0.2 | 0.0 | 0.44718 | 0.0 | 0.0 | ... | 0.0 | 0  | 0.0 | 0.0 | 0.0 | 0.0 | 1.0 | 0.0 | 0.0 | 1.0 |
+
+</div>
+
+----------------------------------------------------------------
 
 ### Data Training dan Testing
 
@@ -708,7 +743,9 @@ Pada proyek ini, penilaian model menggunakan confusion matrix, akurasi, dan f1 s
 
 ### Sekilas Tentang Matriks Confusion, Akurasi, dan Skor f1
 
-Matriks Confusion merupakan sebuah tabel untuk mengukur akurasi dari model klasifikasi. Contoh dari Matriks Confusion beserta labelnya dapat dilihat pada gambar di bawah ini.
+Confusion matrix merupakan cara kita mencatat poin benar dan poin salah tersebut. Di dalam matriks ini, kita tulis semua kemungkinan jawaban yang benar dan jawaban yang salah. Dari catatan ini, kita bisa mengetahui seberapa baik model kita dalam menebak kelereng dan apa yang perlu diperbaiki agar model kita makin pintar menebak. Dalam confusion matrix, ada 4 bagian yang penting untuk kita ketahui. Seluruh bagian tersebut digabung menjadi tabel sederhana seperti di bawah ini. Tujuan utama dari confusion matrix adalah untuk memvisualisasikan dan menganalisis hasil prediksi yang dibuat oleh model, sehingga kita bisa lebih mudah memahami kelebihan dan kekurangan model dalam mengklasifikasikan data [(Memahami Confusion Matrix: Accuracy, Precision, Recall, Specificity, dan F1-Score untuk Evaluasi Model Klasifikasi, 2023)](https://esairina.medium.com/memahami-confusion-matrix-accuracy-precision-recall-specificity-dan-f1-score-610d4f0db7cf).
+
+Contoh dari Matriks Confusion beserta labelnya dapat dilihat pada gambar di bawah ini.
 
 <!-- markdownlint-disable MD033 -->
 <img src = "Gambar/Confussion Matriks.png" alt="Sekilas Tentang Matriks Confusion, Akurasi, dan Skor f1"/>
@@ -779,13 +816,15 @@ Berikut merupakan matriks confusion, akurasi, dan skor f1 dari Logistic Regressi
 
 Dari hasil di atas menunjukkan performa yang sangat baik dalam mengklasifikasikan gangguan tidur (Insomnia, No Disorder, Sleep Apnea) dengan akurasi 95.11%. Hasil ini didukung oleh nilai presisi, recall, dan F1-score berbobot di kisaran 95,11%. Model memiliki kemampuan klasifikasi yang konsisten di setiap kelas dengan skor F1 sekitar 0.95 untuk semua kategori
 
+Kelebihan dari model ini ialah Sederhana, cepat, dan interpretasi mudah. Akurasi cukup baik (0.9511). Namun kekurangan dari model ini ialah tidak bekerja optimal pada data dengan hubungan non-linear.
+
 #### 2. Model Decision Tree
 
 Berikut merupakan matriks confusion, akurasi, dan skor f1 dari Decision Tree
 
 <!-- markdownlint-disable MD033 -->
 <img src = "Gambar/matrix2.png" alt="Matrix Model Decision Tree"/> <br>
-<img src = "Gambar/gambar23.png" alt="Matrix Model Logistic Regression"/> <br>
+<img src = "Gambar/gambar23.png" alt="Matrix Model Decision Tree"/> <br>
 <!-- markdownlint-enable MD033 -->
 
 Model Decision Tree menghasilkan performa yang unggul dengan akurasi 94.67% dalam mengklasifikasikan gangguan tidur. Presisi, recall, dan F1-score berbobot berada di atas 94.67%. Model menunjukkan performa terbaik untuk kelas ```Sleep Apnea``` (F1-score: 0.9466) dan memberikan keseimbangan yang baik pada semua kelas, meskipun sedikit kesalahan terjadi pada prediksi kelas ```Insomnia``` dan ```Sleep Apnea```
@@ -800,6 +839,9 @@ Berikut merupakan matriks confusion, akurasi, dan skor f1 dari Random Forest
 <!-- markdownlint-enable MD033 -->
 
 Model ini memiliki performa dengan akurasi 95.56%, mengungguli Logistic Regression dan Decision Tree. Presisi, recall, dan F1-score berbobot berada di atas 96%, dengan performa yang sangat kuat untuk kelas ```Sleep Apnea``` (F1-score: 0.96). Model ini mampu memberikan hasil yang konsisten pada semua kelas, menjadikannya pilihan yang paling andal untuk klasifikasi gangguan tidur dalam dataset ini
+
+Kelebihan dari model ini ialah akurasi kedua tertinggi (0.9556). Model cenderung lebih robust terhadap overfitting dibanding Decision Tree.
+dan kekurangan dari model ini ialah tidak seefisien Gradient Boosting dalam menangkap interaksi antar variabel.
 
 #### 4. Model ***K-Nearest Neighbors* (KNN)**
 
@@ -833,6 +875,8 @@ Berikut merupakan matriks confusion, akurasi, dan skor f1 dari model *Gradient B
 <!-- markdownlint-enable MD033 -->
 
 Model Gradient Boosting mencapai akurasi 97.33% dengan presisi, recall, dan f1-score weighted yang konsisten di atas 97%. Model menunjukkan performa tinggi pada semua kelas, dengan f1-score tertinggi pada No Disorder (99%). Beberapa kesalahan minor pada confusion matrix tidak signifikan.
+
+Kelebihan dari model Gradient Boosting Akurasi, presisi, recall, dan F1-score tertinggi di antara semua model (0.9733). Cocok untuk dataset yang kompleks dan menangani ketidakseimbangan kelas. Kekurangan dari model Gradient Boosting Waktu komputasi cenderung lebih tinggi dibandingkan model sederhana seperti Logistic Regression.
 
 #### 7. Model ***Extreme Gradient Boosting* (XGBoost)**
 
@@ -882,6 +926,179 @@ Interpretasi :
 
 Secara keseluruhan, heatmap ini mengungkapkan pola hubungan yang menarik antara berbagai indikator kesehatan, dengan beberapa korelasi kuat dan beberapa lainnya lemah. Analisis lebih lanjut diperlukan untuk memahami dinamika yang mendasari these pola.
 
+### Analisis Perbandingan Model Klasifikasi Gangguan Tidur
+
+#### Rangkuman Performa Model
+
+| Model | Akurasi | Presisi (Weighted) | Recall (Weighted) | F1-Score (Weighted) |
+|-------|---------|-------------------|-------------------|---------------------|
+| Gradient Boosting | 0.9733 | 0.9733 | 0.9733 | 0.9732 |
+| Random Forest | 0.9556 | 0.9558 | 0.9556 | 0.9556 |
+| Logistic Regression | 0.9511 | 0.9523 | 0.9511 | 0.9508 |
+| XGBoost | 0.9467 | 0.9484 | 0.9467 | 0.9465 |
+| Decision Tree | 0.9467 | 0.9467 | 0.9467 | 0.9466 |
+| K-Nearest Neighbors | 0.9378 | 0.9395 | 0.9378 | 0.9377 |
+| Support Vector Machine | 0.9244 | 0.9260 | 0.9244 | 0.9234 |
+
+#### Analisis Mendalam Model
+
+**1. *Gradient Boosting***
+
+**Kelebihan:**
+
+Gradient Boosting menunjukkan performa yang sangat mengesankan dalam klasifikasi gangguan tidur, dengan akurasi tertinggi mencapai 97.33%. Model ini memanfaatkan teknik ensemble learning yang canggih, di mana serangkaian model lemah dikombinasikan untuk menghasilkan prediksi yang kuat dan akurat. Kemampuannya dalam menangkap pola kompleks dan hubungan non-linear dalam data membuatnya sangat efektif untuk tugas klasifikasi yang rumit.
+
+**Kekurangan:**
+
+Meskipun memiliki performa yang luar biasa, Gradient Boosting memiliki beberapa tantangan signifikan. Model ini membutuhkan sumber daya komputasi yang intensif untuk pelatihan dan prediksi, yang dapat menjadi kendala pada sistem dengan keterbatasan komputasi. Selain itu, proses hyperparameter tuning dapat menjadi kompleks dan memakan waktu, memerlukan keahlian khusus untuk mengoptimalkan performa model secara maksimal.
+
+**2. *Random Forest***
+
+**Kelebihan:**
+
+Random Forest merupakan model ensemble yang robust, menampilkan performa kedua terbaik dengan akurasi 95.56%. Kekuatan utamanya terletak pada kemampuan untuk mengurangi overfitting melalui agregasi prediksi dari multiple decision trees. Model ini sangat efektif dalam menangani fitur non-linear dan memiliki kemampuan untuk mengatasi kompleksitas data yang tinggi, menjadikannya pilihan yang handal untuk berbagai tugas klasifikasi.
+
+**Kekurangan:**
+
+Namun, Random Forest tidak sepenuhnya bebas dari kelemahan. Kompleksitas struktur modelnya membuat interpretasi hasil menjadi kurang transparan dibandingkan model linier seperti Logistic Regression. Selain itu, model ini membutuhkan sumber daya komputasi yang signifikan, terutama untuk dataset yang besar, yang dapat membatasi penggunaannya pada sistem dengan kapasitas komputasi terbatas.
+
+**3. *Logistic Regression***
+
+**Kelebihan:**
+
+Logistic Regression menghadirkan pendekatan yang sederhana namun efektif, dengan akurasi yang solid sebesar 95.11%. Kesederhanaan model ini membuatnya sangat cepat dalam pelatihan dan prediksi, serta mudah diinterpretasi. Kemampuannya untuk memberikan probabilitas kelas membuatnya berguna dalam berbagai skenario klasifikasi, terutama ketika interpretabilitas model menjadi prioritas utama.
+
+**Kekurangan:**
+
+Keterbatasan utama Logistic Regression terletak pada asumsi linearitas hubungan antara fitur dan target. Dalam kasus data medis yang kompleks seperti gangguan tidur, model ini mungkin tidak dapat menangkap pola non-linear yang lebih rumit. Akibatnya, performa model dapat menurun secara signifikan jika data memiliki hubungan yang kompleks dan tidak linear.
+
+**4. *XGBoost***
+
+**Kelebihan:**
+XGBoost menampilkan performa yang sangat baik dengan akurasi 94.67%, menggunakan teknik gradient boosting yang canggih. Model ini dikenal dengan kemampuannya dalam menangani berbagai tipe data, melakukan regularisasi untuk mencegah overfitting, dan memiliki kecepatan komputasi yang tinggi. Fleksibilitas dalam menangani fitur sparse dan kemampuan untuk melakukan feature importance membuat XGBoost sangat populer dalam kompetisi machine learning.
+
+**Kekurangan:**
+Meskipun powerful, XGBoost memiliki kompleksitas yang cukup tinggi dalam proses tuning. Pemilihan hyperparameter yang tepat membutuhkan waktu dan keahlian khusus. Selain itu, model ini cenderung membutuhkan lebih banyak sumber daya komputasi dibandingkan model linier sederhana, yang dapat menjadi kendala pada sistem dengan kapasitas terbatas.
+
+**5. *Decision Tree***
+
+**Kelebihan:**
+Decision Tree dengan akurasi 94.67% menawarkan model yang mudah diinterpretasi dan divisualisasikan. Kemampuannya dalam membuat keputusan berdasarkan serangkaian aturan yang jelas membuatnya sangat transparan. Model ini tidak memerlukan scaling data dan dapat menangani fitur kategorik dan numerik dengan baik.
+
+**Kekurangan:**
+Kelemahannya terletak pada kecenderungan overfitting, terutama jika dibiarkan tumbuh terlalu dalam. Decision Tree rentan terhadap data training yang sedikit berubah, yang dapat menghasilkan struktur pohon yang sangat berbeda. Dibandingkan dengan model ensemble seperti Random Forest, performa tunggal Decision Tree biasanya kurang stabil.
+
+**6. *K-Nearest Neighbors (KNN)***
+
+**Kelebihan:**
+KNN dengan akurasi 93.78% adalah model yang sederhana namun powerful. Metode ini sangat intuitif, bekerja dengan membandingkan instance baru dengan tetangga terdekatnya dalam ruang fitur. Tidak membutuhkan asumsi distribusi data dan dapat menangani pola non-linear dengan baik.
+
+**Kekurangan:**
+Kelemahan utama KNN adalah kompleksitas komputasi yang tinggi pada dataset besar, karena harus menghitung jarak untuk setiap instance baru. Sensitif terhadap scaling fitur dan pemilihan nilai K, serta tidak efisien untuk ruang fitur dengan dimensi tinggi. Kinerja model sangat tergantung pada pemilihan metrik jarak dan jumlah tetangga.
+
+**7. *Support Vector Machine (SVM)***
+
+**Kelebihan:**
+SVM menunjukkan kemampuan dalam mencari hyperplane optimal untuk memisahkan kelas, dengan fokus pada margin maksimum. Model ini sangat efektif untuk ruang fitur dimensi tinggi dan memiliki fleksibilitas melalui berbagai pilihan kernel. Kemampuannya dalam menangani dataset dengan fitur kompleks membuatnya menarik untuk berbagai aplikasi machine learning.
+
+**Kekurangan:**
+Dalam konteks dataset gangguan tidur, SVM menampilkan performa terendah dengan akurasi 92.44%. Kelemahan utamanya terletak pada sensitivitas tinggi terhadap pemilihan kernel dan parameter, yang memerlukan proses tuning yang cermat. Selain itu, kompleksitas komputasi SVM meningkat secara signifikan dengan ukuran dataset, membatasi skalabilitasnya untuk dataset besar.
+
+### Matematis Gradient Boosting Classifier dengan Parameter Default
+
+#### 1. Konfigurasi Model
+
+```python
+GradientBoostingClassifier(random_state=42)
+```
+
+#### 2. Parameter Default yang Aktif
+
+##### Hyperparameter Utama
+
+| Parameter | Nilai Default | Deskripsi Matematis |
+|-----------|---------------|---------------------|
+| `n_estimators` | 100 | Jumlah trees dalam ensemble |
+| `learning_rate` | 0.1 | Kontribusi setiap tree terhadap model final |
+| `max_depth` | 3 | Kedalaman maksimal setiap decision tree |
+| `random_state` | 42 | Seed untuk reproduksibilitas |
+
+#### 3. Implikasi Matematis Parameter Default
+
+##### a. Jumlah Trees (n_estimators = 100)
+
+- Secara matematis : Model akan membangun 100 weak learners
+- Setiap tree berkontribusi memperbaiki residual
+- Kompleksitas komputasi : `O(100 * d * N)`
+
+##### b. Learning Rate (0.1)
+
+Fungsi matematis:
+
+```Math
+F_m(x) = F_{m-1}(x) + 0.1 * h_m(x)
+```
+
+- Mengurangi kontribusi setiap tree
+- Mencegah overfitting
+- Membuat model lebih smooth
+
+##### c. Kedalaman Tree (max_depth = 3)
+
+- Membatasi kompleksitas individual tree
+- Mencegah overfitting
+- Mempertahankan bias-variance trade-off
+
+#### 4. Matematika Loss Function Default
+
+##### Deviance Loss untuk Multiclass
+
+```Math
+Loss = -∑[y_i * log(p_i) + (1-y_i) * log(1-p_i)]
+```
+
+#### 5. Probabilitas Prediksi
+
+##### Softmax Multiclass
+
+```Math
+P(class_k) = exp(F_k(x)) / ∑[exp(F_j(x))]
+```
+
+#### 6. Kompleksitas Komputasional
+
+##### Analisis Waktu
+
+- **Notasi**: `O(M * d * N)`
+  - M : 100 trees (default)
+  - d : Kedalaman 3
+  - N : Jumlah sampel
+
+#### 7. Visualisasi Matematis Proses
+
+```Flow
+Inisialisasi → Tree 1 → Tree 2 → ... → Tree 100
+      ↓           ↓         ↓           ↓
+ Residual 1   Residual 2  Residual 3  Residual 100
+      ↓           ↓         ↓           ↓
+ Model Terupdate Secara Iteratif
+```
+
+#### 8. Keunggulan Matematis Konfigurasi Default
+
+- Robust untuk berbagai jenis dataset
+- Keseimbangan antara kompleksitas dan generalisasi
+- Mencegah overfitting melalui learning rate rendah
+- Mempertahankan interpretabilitas model
+
+#### Kesimpulan Matematis
+
+Konfigurasi default Gradient Boosting Classifier dirancang untuk:
+
+- Performa umum yang baik
+- Adaptasi terhadap berbagai struktur data
+- Kontrol kompleksitas model
+
 ## Kesimpulan
 
    1. Dalam penelitian ini, proporsi responden berdasarkan kategori gangguan tidur adalah **No Disorder (67,1%)**, **insomnia (16,6%)**, dan **sleep apnea (16,3%)**, yang menunjukkan masalah gangguan tidur cukup signifikan.
@@ -899,9 +1116,7 @@ Secara keseluruhan, heatmap ini mengungkapkan pola hubungan yang menarik antara 
 ## Referensi
 
    1. National Library od Medicine. (2023). Diakses pada 11 Juni 2023 <https://www.ncbi.nlm.nih.gov/books/NBK560720/#article-29137.r1>
-   2. N. A. Salbiah, “Indonesia Tempati Angka Tertinggi Insomnia di Asia, Apa Penyebabnya?,” <https://jawapos.com>, 2018. <https://www.jawapos.com/kesehatan/health> issues/12/03/2018/indonesia-tempati-angka-tertinggi insomnia-di-asia-apa-penyebabnya/ (accessed Jun. 26, 2021).
-   3. Dicoding. Diakses pada 6 Juli 2024 dari <https://www.dicoding.com/academies/319-machine-learning-terapan>
-   4. Harisa, A., Syahrul, S., Yodang, Y., Abady, R., & Bas, A. G. (2022). Analisis Faktor-Faktor yang Memengaruhi Kualitas Tidur Pasien Lanjut Usia dengan Penyakit Kronis. Jurnal Kesehatan Vokasional, 7(1), 1.
-   5. Memahami Confusion Matrix: Accuracy, Precision, Recall, Specificity, dan F1-Score untuk Evaluasi Model Klasifikasi. (2023). Diakses pada 12 Juni 2023 <https://esairina.medium.com/memahami-confusion-matrix-accuracy-precision-recall-specificity-dan-f1-score-610d4f0db7cf>
-   6. Bazoukis, G., Bollepalli, S. C., Chung, C. T., Li, X., Tse, G., Bartley, B. L., ... & Armoundas, A. A. (2023). Application of artificial intelligence in the diagnosis of sleep apnea. Journal of Clinical Sleep Medicine, 19(7), 1337-1363.
-   7. Xu, S., Faust, O., Seoni, S., Chakraborty, S., Barua, P. D., Loh, H. W., ... & Acharya, U. R. (2022). A review of automated sleep disorder detection. Computers in Biology and Medicine, 150, 106100.
+   2. Benetó, A., Gomez-Siurana, E., & Rubio-Sanchez, P. (2009). Comorbidity between sleep apnea and insomnia. Sleep medicine reviews, 13(4), 287-293.
+   3. Sweetman, A., Lack, L., McEvoy, R. D., Smith, S., Eckert, D. J., Osman, A., ... & Catcheside, P. (2021). Bi-directional relationships between co-morbid insomnia and sleep apnea (COMISA). Sleep medicine reviews, 60, 101519.
+   4. Memahami Confusion Matrix: Accuracy, Precision, Recall, Specificity, dan F1-Score untuk Evaluasi Model Klasifikasi. (2023). Diakses pada 12 Juni 2023 <https://esairina.medium.com/memahami-confusion-matrix-accuracy-precision-recall-specificity-dan-f1-score-610d4f0db7cf>
+   5. Xu, S., Faust, O., Seoni, S., Chakraborty, S., Barua, P. D., Loh, H. W., ... & Acharya, U. R. (2022). A review of automated sleep disorder detection. Computers in Biology and Medicine, 150, 106100.
